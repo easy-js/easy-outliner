@@ -1,0 +1,31 @@
+{
+  "name": "easy-outliner",
+  "description": "Create document outlines from html strings (node only atm - using cheerio).",
+  "author": "Jarid Margolin <jarid@firstopinion.co>",
+  "version": "0.0.1",
+  "homepage": "https://github.com/easy-js/easy-outliner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/easy-js/easy-outliner"
+  },
+  "bugs": {
+    "url": "https://github.com/easy-js/easy-outliner/issues"
+  },
+  "main": "lib/outliner.js",
+  "scripts": {
+    "mocha": "./node_modules/.bin/mocha --reporter spec",
+    "jshint": "./node_modules/.bin/jshint --reporter node_modules/jshint-stylish-ex/stylish.js lib test",
+    "test": "npm run jshint && npm run mocha"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "~0.18.0",
+    "easy-utils": "~0.0.1"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "jshint": "~2.5.11",
+    "jshint-stylish-ex": "~0.2.0",
+    "mocha": "~2.1.0"
+  }
+}
